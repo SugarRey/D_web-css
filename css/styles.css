@@ -1,0 +1,239 @@
+/* Fuentes */
+@font-face {
+   font-family: "TrebuchetMS";
+   src: url('fonts/TrebuchetMS.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "BebasNeue";
+   src: url('fonts/BebasNeue.otf');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "WebSymbolsRegular";
+   src:  url('fonts/websymbols-regular-webfont.eot');
+   src:  url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/websymbols-regular-webfont.woff') format('woff'), 
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* Generales */
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   background-image: url("../img/pattern.png");
+}
+.wrap{
+   width:1200px;
+   margin: 0 auto;
+}
+.gear, .icon{
+   font-family: 'WebSymbolsRegular';
+}
+
+
+
+
+
+/* cabecera */
+header{
+   width: 100%;
+   height:70px;
+   background-color: #000000;
+   font-family: 'BebasNeue';
+   color: white;
+}
+#logo{
+   float: left;
+   width: 200px;
+   background-color: #37bcf9;
+   text-align: center;
+   letter-spacing: 1px;
+   cursor: pointer;
+   overflow: hidden;
+   transition: all 300ms;
+   margin-top: 8px;
+   margin-left: 20px;
+}
+#logo .gear{
+   float: left;
+   display: flex;
+   font-size: 30px;
+   margin-top: 8px;
+   margin-left: 25px;
+}
+#logo h3{
+   font-size:40px;
+   display: block;
+   float: right;
+   margin-top: 5px;
+   transition: all 300ms;
+   margin-right: 65px;
+}
+
+
+#menu{
+   float: right;
+   height: 70px;
+   background: transparent;
+
+}
+#menu ul li{
+   font-size: 24px;
+   display: inline-block;
+   margin: 0 20px 0 20px;
+   line-height:70px;
+}
+#menu ul li a{
+   color: white;
+   display: block;
+   text-decoration: none;
+   transition: all 200ms;
+}
+#menu ul li a:hover{
+   color: #37bcf9;
+   transform: scale(1.2 , 1.2)
+}
+
+
+
+/* Banner */
+
+#banner{
+   height:100px;
+   width: 95%;
+   border: 10px solid white;
+   box-shadow: 0 0 2px gray;
+   background: url('../img/bakbaner.png');
+   background-position: -300px -150px;
+   margin: 20px auto;
+}
+
+#banner h1{
+   display: block;
+   width: 100%;
+   font-family: 'BebasNeue';
+   color: white;
+   font-size: 45px;
+   letter-spacing: 2px;
+   text-align: center;
+   line-height: 100px;
+   text-shadow: 2px 2px 1px #000000;
+
+}
+
+/* tarjetsas */
+.card{
+   float: left;
+   overflow: hidden;
+   margin: 16px;
+   margin-top: 40px;
+   width:205px;
+   height:305px;
+   border: 1px solid #ccc;
+   box-shadow: 1px 1px 2px #ddd; 
+   cursor: pointer;
+   background-color: white;
+}
+
+.card:last-child{
+   margin-right: 0px;
+}
+
+.card .icon{
+   display: block;
+   width: 100%;
+   height:130px;
+   font-size: 50px;
+   line-height:130px;
+   text-align: center;
+  
+  margin: 0 auto;
+}
+.card .category{
+   width: 100%;
+   height:50px;
+   font-family: 'TrebuchetMS';
+   font-size:21px;
+   font-weight: bold;
+   text-align: center;
+   color: #044570;
+}
+.card .description{
+   text-align: center;
+   color: #00538c;
+   font-family: 'TrebuchetMS';
+   font-size:15px;
+}
+
+
+/* Barra lateral */
+
+#lateral {
+   width: 300px;
+   min-height: 1200px;
+   font-family: 'TrebuchetMS';
+   float: right;
+   margin: 20px;
+}
+aside h3{
+   display: block;
+   width: auto;
+   height: 45px;
+   line-height:49px;
+   box-shadow: 0px 1px 0px #393d3f, 1px 2px 0 #393d3f, 2px 3px 0 #393d3f, 3px 4px 0 #393d3f;
+   background: url(../img/pxgray.png), white;
+   font-size: 30px;
+   font-family: 'BebasNeue';
+   font-weight: normal;
+   letter-spacing: 2px;
+   padding-left: 15px;
+   margin-top: 30px ;
+   margin-bottom: 15px;
+}
+aside h3:last-child{
+   margin-top: 0px;
+}
+#search{
+   width: 90%;
+   height:30px;
+   margin: 10px auto;
+   background-color: white;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow:1px 1px 4px #ccc inset;
+}
+
+#lateral input[type="text"]{
+   width: 85%;
+   height:30px;
+   border: none !important;
+   padding-left: 5px;
+   border-radius: 5px;
+   background-color: transparent;
+   color: #ccc;
+   transition: all 300ms;
+}
+#lateral input[type="text"]:focus{
+   color: #555;
+}
+
+#lateral input[type="button"],
+#lateral input[type="submit"]{
+   height: 30px;
+   cursor: pointer;
+   font-size:16px;
+   background-color: transparent;
+   border: none;
+   border-left: 1px solid #ccc;
+   color:#555;
+   padding-left:5px;
+
+}
